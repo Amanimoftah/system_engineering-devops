@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# displays 'Holberton School' 10 times; 'Hi' after 9th iteration
+# Display "Best School" 10 times and displays "Hi" for the 9th iteration
 
-while (( i < 10 ))
-do
-	if (( i == 9 ))
-	then
-		echo "Hi"
-    	fi
-	echo "Holberton School"
-	(( i += 1 ))
+i=0
+
+while [ $i -lt 10 ]; do
+      echo "Best School"
+      if [ $i -eq 8 ]; then
+	  echo "Hi"
+      fi
+      i=$((i+1))
 done
